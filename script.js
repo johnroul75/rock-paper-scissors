@@ -32,7 +32,6 @@ function playRound(playerChoice, computerChoice){
                 ++computerScore;
                 return lose;
     } else {
-        // console.log(tie);
         return tie;
     }
 }
@@ -50,6 +49,14 @@ function game(){
         playRound()
         tries += 1;
         console.log(`This is try #${tries}`)
+        console.log(`Player Score is currently: ${playerScore} and Computer Score is currently: ${computerScore}`);
+        if(playerScore > computerScore){
+            console.log('You are winning right now. Keep it up!');
+        } else if(computerScore > playerScore){
+            console.log('The computer is winning right now. Step it up son!');
+        } else {
+            console.log('You are both tied at the moment');
+        }
         console.log('**********')        
 
     }       
