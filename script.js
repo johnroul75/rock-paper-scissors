@@ -1,18 +1,15 @@
 // 1. Create a function called getComputerChoice that will randomly return one of three options: rock, paper, or scissors.
 
 function getComputerChoice(compChoice){ 
-   let num =  Math.floor(Math.random() * 3) + 1;
-
-   if(num === 1){
+    let num =  Math.floor(Math.random() * 3) + 1;
+    if(num === 1){
     num = 'rock'
    } else if(num === 2){
     num = 'paper'
    } else {
     num = 'scissors'
    }
-return num;
-
-
+   return num;
 }
 getComputerChoice();
 
